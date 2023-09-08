@@ -1,0 +1,1759 @@
+/* ==================== ADD GOOGLE FONTS ============== */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&family=Mulish:wght@400;500;600;700&display=swap');
+
+
+
+/* ========= RESET CSS =========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* ================ CUSTOM PROPERTY ====== */
+:root {
+
+    /* COLORS  */
+    --primary-color: #80c2bd;
+    --secondary-color: #de636b;
+    --sonic-silver: #707070;
+    --eerie-black: #171717;
+    --ocean-green: #64c491;
+    --cultured: #f5f5f5;
+    --white: #ffffff;
+    --main-color: #22BAA0;
+    --color-dark: #34425A;
+    --text-grey: #B0B0B0;
+
+    /* FONTS  */
+    --primary-font: 'Jost', sans-serif;
+    --secondary-font: 'Mulish', sans-serif;
+}
+
+
+/* ============== STYLE HEADER ============= */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.mobile_search_box {
+    display: none;
+}
+
+
+.search_box {
+    width: 300px;
+    height: 45px;
+    position: relative;
+}
+
+.search_box input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--sonic-silver);
+    padding: 0 1rem;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    color: var(--eerie-black);
+    font-size: 1.6rem;
+    outline: none;
+    border-radius: .3rem;
+    transition: all .4s ease-in-out;
+}
+
+.search_box input:is(:focus, :active) {
+    border-color: var(--eerie-black);
+}
+
+.search_icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    color: var(--eerie-black);
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.logo span {
+    background-color: var(--eerie-black);
+    color: var(--cultured);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-family: var(--primary-font);
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.right-menu ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .7rem;
+    cursor: pointer;
+}
+
+.right-menu ul li p {
+    font-family: var(--primary-font);
+    color: var(--sonic-silver);
+    font-size: 1.4rem;
+    font-weight: 400;
+    transition: all .4s ease-in-out;
+    text-transform: capitalize;
+}
+
+.right-menu ul li:hover>p {
+    color: var(--eerie-black);
+}
+
+.right-menu-icon {
+    font-size: 2.7rem;
+    color: #3e3e3e;
+    position: relative;
+}
+
+.right-menu ul li span {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    top: 10px;
+}
+
+.green {
+    background-color: var(--ocean-green);
+    right: 120px;
+}
+
+.dark {
+    background-color: var(--eerie-black);
+    right: 60px;
+}
+
+hr {
+    background-color: var(--sonic-silver);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 60px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navbar a {
+    color: var(--eerie-black);
+    font-family: var(--secondary-font);
+    font-size: 1.65rem;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+}
+
+.mobile {
+    display: none;
+}
+
+
+
+
+/* ================ STYLE BANNER SECTION =============== */
+#banner {
+    width: 100vw;
+    height: 500px;
+    background-color: var(--cultured);
+    display: flex;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+#banner .right h3 {
+    color: var(--black);
+    font-family: var(--primary-font);
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+}
+
+#banner .right h2 {
+    font-size: 3.5rem;
+    color: var(--eerie-black);
+    font-family: var(--secondary-font);
+}
+
+#banner .right h1 {
+    color: var(--secondary-color);
+    font-size: 4rem;
+    font-family: var(--primary-font);
+}
+
+#banner .right p {
+    color: var(--sonic-silver);
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+    letter-spacing: 1.1px;
+}
+
+#banner .left img {
+    height: 500px;
+}
+
+#banner button {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--eerie-black);
+    padding: .7rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-family: var(--primary-font);
+    font-size: 1.7rem;
+    color: var(--eerie-black);
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.btn-icon {
+    font-size: 2.3rem;
+    color: var(--eerie-black);
+    transition: all .4s ease-in-out;
+}
+
+#banner button:hover>.btn-icon {
+    transform: translateX(5px);
+}
+
+
+
+/* =============== STYLE LOGIN PAGE ============== */
+.form_container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: form 2s normal;
+}
+
+@keyframes form {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    100% {
+        opacity: 1;
+        pointer-events: visible;
+    }
+}
+
+.form_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.form_close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2.3rem;
+    color: var(--eerie-black);
+    cursor: pointer;
+}
+
+
+.form_container form {
+    width: 350px;
+    height: auto;
+    border-radius: 1rem;
+    background-color: var(--white);
+    padding: 2rem 1rem;
+    z-index: 999;
+    position: relative;
+}
+
+.form_container img {
+    height: 80px;
+    display: block;
+    margin: auto;
+}
+
+.form_container h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: var(--eerie-black);
+    font-family: var(--secondary-font);
+}
+
+
+.input_box {
+    width: 100%;
+    height: 40px;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.input_box input {
+    height: 100%;
+    width: 100%;
+    padding: 0 3rem;
+    font-family: var(--primary-font);
+    border: none;
+    outline: none;
+    font-size: 1.65rem;
+    color: var(--eerie-black);
+    border-bottom: 1.5px solid var(--sonic-silver);
+    transition: all .4s ease-in-out;
+}
+
+.input_box input:is(:focus, :active) {
+    border-color: var(--ocean-green);
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    font-size: 2.3rem;
+    color: rgb(61, 61, 61);
+}
+
+.chek_box {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    margin-top: 1.5rem;
+}
+
+.chek_box input {
+    accent-color: var(--ocean-green);
+    color: var(--white);
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.chek_box label {
+    font-size: 1.45rem;
+    color: var(--eerie-black);
+    font-family: var(--primary-font);
+}
+
+.form_container button {
+    background-color: var(--ocean-green);
+    color: var(--white);
+    font-family: var(--primary-font);
+    width: 100%;
+    padding: .5rem 0;
+    border: none;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.form_container p {
+    color: var(--sonic-silver);
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.form_container p a {
+    color: var(--ocean-green);
+    transition: all .4s ease-in-out;
+}
+
+.form_container p a:hover {
+    text-decoration: underline;
+}
+
+
+/* =================== STYLE FOOTER PAGE ================ */
+#footer {
+    width: 100vw;
+    background-color: #252422;
+    padding: 1rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100vw;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+    }
+
+    #footer div {
+        margin-top: 2rem;
+    }
+}
+
+#footer h2 {
+    font-family: var(--primary-font);
+    font-size: 2.4rem;
+    color: var(--white);
+    position: relative;
+}
+
+#footer h2::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 30%;
+    background-color: var(--secondary-color);
+}
+
+#footer ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+}
+
+#footer ul li {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    cursor: pointer;
+}
+
+.footer-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+#footer p {
+    font-family: var(--secondary-font);
+    color: var(--cultured);
+    font-size: 1.5rem;
+}
+
+#footer a {
+    font-family: var(--secondary-font);
+    font-size: 1.65rem;
+    color: var(--cultured);
+    transition: all .4s ease-in-out;
+    font-weight: 500;
+}
+
+#footer a:hover {
+    transform: translateX(8px);
+}
+
+.copyright {
+    background-color: var(--eerie-black);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.copyright h1 {
+    color: var(--cultured);
+    font-family: var(--secondary-font);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.copyright h1 span {
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+}
+
+@media only screen and (max-width: 600px) {
+    .copyright {
+        height: 88px;
+    }
+}
+
+
+
+
+
+/* ==================== STYLE USER-DASHBOARD ==============  */
+
+.user_menu {
+    background-color: var(--cultured);
+    padding: 1rem 1.5rem;
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_menu img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.user_menu h2 {
+    color: var(--eerie-black);
+    font-family: var(--primary-font);
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.user_menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+
+.user_menu ul a {
+    font-family: var(--secondary-font);
+    color: var(--eerie-black);
+    font-size: 1.65rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.action-icon {
+    color: var(--secondary-color);
+    font-size: 2.3rem;
+}
+
+.user_dashboard_container {
+    display: flex;
+    gap: 4rem;
+    width: 100vw;
+    height: 70vh;
+    gap: 4rem;
+}
+
+
+.user_dashboard_container .right {
+    background-color: var(--white);
+    border: 1px solid var(--sonic-silver);
+    border-radius: .5rem;
+    width: 70vw;
+    height: 70vh;
+    overflow: auto;
+}
+
+.user_dashboard_container .right h1 {
+    font-size: 2.5rem;
+    color: var(--black);
+    font-family: var(--secondary-font);
+    text-align: center;
+    background-color: rgb(216, 216, 216);
+    padding: .7rem 0;
+}
+
+.details_box {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    border-bottom: 1px solid var(--sonic-silver);
+    padding: 0 2rem;
+}
+
+.details_box h2 {
+    color: var(--eerie-black);
+    font-family: var(--primary-font);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.details_box p {
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    color: var(--sonic-silver);
+    text-align: start;
+}
+
+.detail-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+
+
+
+
+/* ==================== Edit Profile Page ==================== */
+
+.editProfile_container {
+    padding: 0 5rem;
+}
+
+.editProfile_container button {
+    background-color: var(--ocean-green);
+    color: var(--white);
+    font-family: var(--primary-font);
+    width: 100%;
+    padding: .5rem 0;
+    border: none;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+
+/* ================== STYLE HOMEPAGE ============ */
+.products_container {
+    min-height: 90vh;
+    width: 100vw;
+    padding: 2rem 6rem;
+}
+
+.products_container h1 {
+    font-family: var(--secondary-font);
+    color: var(--eerie-black);
+    font-size: 2.7rem;
+    font-weight: bold;
+    width: 300px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.products_container h1::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 85%;
+    bottom: -3.5px;
+    left: 5px;
+    background-color: var(--secondary-color);
+}
+
+.products_container h1::after {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    bottom: -7px;
+    left: 0;
+    background-color: var(--secondary-color);
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem 2.5rem;
+    flex-wrap: wrap;
+}
+
+.products .product_card {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.products .img_box {
+    height: 310px;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.products .img_box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all .4s ease-in-out;
+    transform-origin: right;
+}
+
+.products .product_card:hover .img_box img {
+    transform: scale(1.2);
+}
+
+.product_card h2 {
+    color: var(--eerie-black);
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    margin-top: .5rem;
+}
+
+.product_card h3 {
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-size: 1.65rem;
+}
+
+.card-actions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.card-actions span {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-20px);
+    white-space: nowrap;
+    padding: 4px 6px;
+    background-color: var(--white);
+    color: var(--color-dark);
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+    border-radius: .3rem;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+.card-actions li:hover span {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0px);
+}
+
+.card-actions li {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    transform: translateX(60px);
+}
+
+.card-actions li:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.card-actions li:nth-child(2) {
+    transition-delay: 0.5s;
+}
+
+.products .product_card:hover .card-actions li {
+    transform: translateX(0px);
+}
+
+.card-actions li:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.card-actions li:hover .product-icon {
+    color: var(--white);
+}
+
+.product-icon {
+    font-size: 2.3rem;
+    color: var(--color-dark);
+}
+
+
+
+/* ========= STYLE NEWSLETTER SECTION ========== */
+.newsletter {
+    background-size: cover;
+    background-position: 45% 20%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.newsletter h1 {
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-dark);
+    font-family: var(--secondary-font);
+}
+
+.newsletter .input_box {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--white);
+    width: 400px;
+    margin: auto;
+}
+
+.newsletter .input_box input {
+    border: none;
+    outline: none;
+    transition: all .4s ease-in-out;
+    padding: .7rem 3rem;
+}
+
+.newsletter .input_box input:is(:focus, :active) {
+    border: 1.5px solid var(--main-color);
+}
+
+.newsletter .input_box span {
+    background-color: var(--eerie-black);
+    padding: .5rem 1.2rem;
+    color: var(--white);
+    font-family: var(--primary-font);
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.newsletter .input_box span:hover {
+    background-color: var(--white);
+    color: var(--eerie-black);
+}
+
+.subscribe-icon {
+    font-size: 2rem;
+}
+
+.newsletter p {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    color: var(--text-grey);
+}
+
+.email-icon {
+    color: var(--color-dark);
+    font-size: 2.3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+}
+
+
+
+/* =========== CART PAGE =========== */
+
+.cart_container {
+    min-height: 80vh;
+    width: 100vw;
+    padding: 2rem 6rem;
+    background-color: var(--cultured);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-table table {
+    margin-top: 2rem;
+    width: 80%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.product-table table thead tr {
+    background-color: var(--secondary-color);
+}
+
+.product-table table thead tr th {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    color: var(--white);
+    padding: .7rem 1rem;
+}
+
+.product-table tbody tr td {
+    padding: .7rem 1rem;
+    font-size: 1.67rem;
+}
+
+.product-detail {
+    display: flex;
+    gap: .5rem;
+}
+
+
+.product-detail h4 {
+    font-family: var(--primary-font);
+    color: var(--color-dark);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.product-detail p {
+    font-size: 1.4rem;
+    color: var(--text-grey);
+    font-family: var(--secondary-font);
+}
+
+
+
+.product-table h4 {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--sonic-silver);
+}
+
+.product-table h3 {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-size: 1.7rem;
+}
+
+.product-del {
+    font-size: 2.2rem;
+    color: var(--eerie-black);
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ============ PAYEMTN SECTION ============ */
+.payment_container {
+    width: 80%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+}
+
+.payment_container .payment {
+    border-top: 2px solid var(--secondary-color);
+    width: 300px;
+}
+
+.payment .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.payment .total h2 {
+    color: var(--color-dark);
+    font-family: var(--secondary-font);
+    font-size: 1.65rem;
+}
+
+.payment .total h3 {
+    color: var(--eerie-black);
+    font-family: var(--primary-font);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.payment .address {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.payment .address h2 {
+    color: var(--color-dark);
+    font-family: var(--secondary-font);
+    font-size: 1.65rem;
+}
+
+.payment .address p {
+    font-size: 1.5rem;
+    color: var(--sonic-silver);
+    font-family: var(--primary-font);
+}
+
+.add-edit {
+    color: var(--main-color);
+    font-size: 2.3rem;
+    cursor: pointer;
+}
+
+.chekout {
+    margin-top: 1rem;
+}
+
+.braintree-heading {
+    color: var(--color-dark);
+    font-family: var(--primary-font);
+    font-size: 1.65rem;
+}
+
+.payment_container .make-payment {
+    padding: .5rem 1.3rem;
+    font-size: 1.65rem;
+    font-family: var(--primary-font);
+    border: none;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--white);
+    border-radius: .3rem;
+    width: 100%;
+}
+
+.wishlist-heading h1 {
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 2.4rem;
+}
+
+.wishlist-heading h1 span {
+    text-transform: capitalize;
+    color: var(--eerie-black);
+
+}
+
+
+.empty-cart-container {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.empty-cart-container img {
+    height: 300px;
+    object-fit: contain;
+}
+
+.empty-cart-container h1 {
+    font-family: var(--secondary-font);
+    color: var(--color-dark);
+    font-size: 2.5rem;
+}
+
+.empty-cart-container button {
+    margin-top: 2rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1.7rem;
+    border: none;
+    padding: .6rem 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: .4rem;
+}
+
+.shop-btn {
+    font-size: 2.2rem;
+}
+
+
+.cart-login-btn {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-size: 1.65rem;
+    font-family: var(--primary-font);
+    cursor: pointer;
+    border: none;
+    padding: .6rem 0;
+    text-transform: capitalize;
+}
+
+
+
+
+/* ================== PRODUCT DETAILS ============== */
+.product_details {
+    min-height: 80vh;
+    width: 100vw;
+    background-color: var(--cultured);
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    gap: 2rem;
+}
+
+.product_details img {
+    height: 310px;
+    width: 250px;
+}
+
+.details-container h2 {
+    font-family: var(--secondary-font);
+    color: var(--color-dark);
+    font-size: 2rem;
+}
+
+.details-container span {
+    color: var(--text-grey);
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+
+.details-container h3 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    color: var(--eerie-black);
+}
+
+.details-container p {
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    color: var(--sonic-silver);
+    margin-top: .7rem;
+    letter-spacing: 1.1px;
+}
+
+.details-container .actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.details-container button {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    background-color: var(--eerie-black);
+    color: var(--cultured);
+    font-family: var(--primary-font);
+    font-size: 1.7rem;
+    padding: .5rem 1.2rem;
+    margin-top: 2rem;
+    border: 2px solid var(--eerie-black);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    border-radius: .3rem;
+}
+
+.addtocart {
+    font-size: 2.2rem;
+}
+
+.details-container button:hover {
+    background-color: var(--white);
+    color: var(--eerie-black);
+}
+
+
+.heart {
+    font-size: 2.8rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    color: var(--secondary-color);
+}
+
+.notify {
+    font-size: 1.7rem;
+    font-family: var(--primary-font);
+}
+
+
+
+/* ========== SEARCH PAGE ========= */
+.search_container {
+    min-height: 80vh;
+    padding: 2rem 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--cultured);
+}
+
+.search_heading {
+    font-family: var(--secondary-font);
+    color: var(--color-dark);
+    font-size: 2.3rem;
+}
+
+.noSearch {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.noSearch img {
+    height: 300px;
+    object-fit: contain;
+}
+
+.noSearch h1 {
+    font-family: var(--secondary-font);
+    font-size: 2.3rem;
+}
+
+
+/* ============== ORDERS PAGE ================= */
+.orders_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.orders_container table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 1rem;
+}
+
+.orders_container table thead tr {
+    background-color: var(--secondary-color);
+}
+
+.orders_container table thead th {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 1.7rem;
+    padding: 1rem .5rem;
+}
+
+.orders_container table tbody td {
+    font-family: var(--primary-font);
+    color: var(--eerie-black);
+    font-size: 1.65rem;
+    padding: 1rem .6rem;
+    font-weight: 500;
+}
+
+.buy_product_container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 1rem 4rem;
+}
+
+.buy_product_container h2 {
+    color: var(--color-dark);
+    font-size: 1.8rem;
+    font-family: var(--secondary-font);
+}
+
+.buy_product_container p {
+    color: var(--eerie-black);
+    font-size: 1.65rem;
+    margin-top: 1rem;
+    font-family: var(--primary-font);
+}
+
+.buy_product_container img {
+    height: 100px;
+}
+
+
+
+
+
+
+/* ================= STYLE ADMIN DASHBOARD HEADER ========== */
+
+#admin_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+
+#admin_header .admin_menu ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#admin_header .admin_menu a {
+    font-family: var(--secondary-font);
+    font-size: 1.6rem;
+    color: var(--eerie-black);
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    text-transform: uppercase;
+}
+
+#admin_header .admin_menu a:is(:active, :hover) {
+    color: var(--main-color);
+}
+
+#admin_header button {
+    background-color: var(--secondary-color);
+    color: var(--cultured);
+    border: 1.5px solid var(--secondary-color);
+    padding: .5rem 1.3rem;
+    font-family: var(--primary-font);
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: .2rem;
+    transition: all .4s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+#admin_header button:hover {
+    background-color: var(--white);
+    color: var(--eerie-black);
+}
+
+.admin_mobile_menu {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+/* ===================== ADMIN DASHBOARD ============== */
+
+#admin_dashboard {
+    width: 100vw;
+    background-color: var(--cultured);
+    padding: 2rem 6rem;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 1rem;
+}
+
+.card {
+    height: 100px;
+    width: 250px;
+    border-radius: .3rem;
+    background-color: var(--white);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 1.5rem;
+    background-color: var(--white);
+}
+
+.users-icon {
+    font-size: 4rem;
+    color: rgb(70, 70, 70);
+}
+
+.card h2 {
+    font-family: var(--primary-font);
+    color: var(--eerie-black);
+    font-size: 2.5rem;
+}
+
+.card p {
+    font-family: var(--primary-font);
+    color: var(--sonic-silver);
+    font-size: 1.6rem;
+}
+
+
+.card-1::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 1.5rem;
+    height: 8px;
+    width: 80%;
+    background-color: var(--secondary-color);
+}
+
+.card-1::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    right: 1.5rem;
+    height: 8px;
+    width: 20%;
+    background-color: var(--text-grey);
+}
+
+.card-2::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 1.5rem;
+    height: 8px;
+    width: 70%;
+    background-color: var(--main-color);
+}
+
+.card-2::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    right: 1.5rem;
+    height: 8px;
+    width: 30%;
+    background-color: var(--text-grey);
+}
+
+.card-3::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 1.5rem;
+    height: 8px;
+    width: 60%;
+    background-color: #ffb703;
+}
+
+.card-3::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    right: 1.5rem;
+    height: 8px;
+    width: 40%;
+    background-color: var(--text-grey);
+}
+
+
+/* ======== USER-TABLE ========== */
+.user_table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.user_table thead tr {
+    background-color: var(--main-color);
+    border-radius: .5rem;
+}
+
+.user_table th {
+    color: var(--white);
+    font-size: 1.75rem;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    padding: .5rem 0;
+
+}
+
+.user_table tbody tr {
+    border-bottom: 1px solid var(--eerie-black);
+}
+
+.user_table td {
+    font-family: var(--primary-font);
+    color: var(--eerie-black);
+    font-size: 1.65rem;
+    padding: .5rem 0;
+}
+
+
+/* ============= ADD PRODUCT PAGE ============= */
+.add-product-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--cultured);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-product-container form {
+    background-color: var(--white);
+    border-radius: .7rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    padding: 2rem;
+    position: relative;
+}
+
+.back-icon {
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--color-dark);
+}
+
+.add-product-container h2 {
+    font-family: var(--secondary-font);
+    color: var(--color-dark);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.input_container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.input_container div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.add-product-container label {
+    font-size: 1.7rem;
+    font-family: var(--secondary-font);
+    color: var(--eerie-black);
+    text-transform: capitalize;
+}
+
+.add-product-container input {
+    border: 1px solid var(--text-grey);
+    border-radius: .4rem;
+    outline: none;
+    font-size: 1.65rem;
+    font-family: var(--secondary-font);
+    color: var(--color-dark);
+    padding: .7rem 1.2rem;
+    width: 300px;
+}
+
+.des-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid var(--text-grey);
+    border-radius: .4rem;
+    outline: none;
+    font-size: 1.65rem;
+    font-family: var(--secondary-font);
+    color: var(--color-dark);
+    padding: .7rem 1.2rem;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+}
+
+.add-product-container button {
+    background-color: var(--main-color);
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1.65rem;
+    text-transform: uppercase;
+    padding: .5rem 1.3rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+/* =============== ADMIN PRODUCTS PAGE ========= */
+#admin_products {
+    width: 100vw;
+    height: 89vh;
+    background-color: var(--cultured);
+    padding: 2rem 6rem;
+}
+
+#admin_products button {
+    background-color: var(--eerie-black);
+    border: 2px solid var(--eerie-black);
+    color: var(--cultured);
+    border-radius: .2rem;
+    padding: .5rem 1.3rem;
+    font-family: var(--primary-font);
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: .8rem;
+    transition: all .4s ease-in-out;
+}
+
+#admin_products button:hover {
+    color: var(--eerie-black);
+    background-color: var(--white);
+}
+
+.add-product-icon {
+    font-size: 2rem;
+}
+
+.admin_products_table {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#admin_products img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.admin_products_table thead tr {
+    background-color: var(--secondary-color);
+}
+
+.admin_products_table thead th {
+    font-family: var(--secondary-font);
+    color: var(--cultured);
+    font-size: 1.8rem;
+    padding: .5rem 0;
+}
+
+.admin_products_table tbody tr {
+    border-bottom: 1px solid var(--eerie-black);
+}
+
+.admin_products_table tbody tr:nth-child(even) {
+    background: rgb(228, 228, 228);
+}
+
+.admin_products_table td {
+    font-family: var(--primary-font);
+    color: var(--eerie-black);
+    font-size: 1.65rem;
+    padding: .5rem 0;
+}
+
+.edit-icon {
+    font-size: 2rem;
+    color: var(--main-color);
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.del-icon {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+/* ============== ADMIN ORDERS PAGE =========== */
+.admin_orders {
+    width: 100vw;
+    background-color: var(--cultured);
+    overflow-x: hidden;
+    padding: 2rem 6rem;
+}
+
+.admin_orders_table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.admin_orders_table thead tr {
+    background-color: var(--ocean-green);
+}
+
+.admin_orders_table thead tr th {
+    color: var(--cultured);
+    font-size: 1.75rem;
+    font-family: var(--secondary-font);
+    padding: .5rem 0;
+}
+
+.admin_orders_table tbody td {
+    font-family: var(--primary-font);
+    color: var(--eerie-black);
+    font-size: 1.65rem;
+    padding: .5rem 0;
+}
+
+.orders_product_card {
+    margin: 2rem 0;
+}
+
+.orders_product_card p {
+    font-family: var(--primary-font);
+    color: var(--eerie-black);
+    font-size: 1.6rem;
+}
+
+.orders_product_card img {
+    height: 200px;
+    object-fit: contain;
+}

@@ -1,0 +1,362 @@
+
+/* =========== RESPONSIVE ========= */
+
+
+
+@media only screen and (max-width: 600px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+
+
+    html {
+        overflow-x: hidden;
+        font-size: 62.5%;
+    }
+
+
+    #header {
+        padding: 1rem 2rem;
+        width: 100vw;
+    }
+
+    #header .right-menu span {
+        top: 5px;
+    }
+
+    #header .dark {
+        right: 18px;
+    }
+
+    #header .green {
+        right: 78px;
+    }
+
+    #header .search_box {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        margin: 1rem 2rem;
+    }
+
+    .search_box {
+        width: 332px;
+    }
+
+    /* ============ BANNER ========= */
+
+    #banner {
+        padding: 1rem 2rem;
+        align-items: flex-start;
+        height: auto;
+        position: relative;
+    }
+
+    #banner .left img {
+        height: 250px;
+    }
+
+    #banner h3 {
+        position: absolute;
+        top: 5rem;
+        right: 6rem;
+    }
+
+    #banner .right h2 {
+        font-size: 2rem;
+        position: absolute;
+        top: 8rem;
+        right: 1rem;
+    }
+
+    #banner .right h1 {
+        font-size: 2.2rem;
+        position: absolute;
+        right: 2rem;
+        top: 11rem;
+    }
+
+    #banner p {
+        display: none;
+    }
+
+    #banner button {
+        position: absolute;
+        right: 1rem;
+        top: 19rem;
+    }
+
+    .newsletter .input_box {
+        width: 350px;
+    }
+
+    .newsletter p {
+        text-align: center;
+    }
+
+    .cart_container {
+        padding: 1rem 2rem;
+    }
+
+    .product-table table {
+        width: 100%;
+    }
+
+    .product-detail {
+        flex-direction: column;
+    }
+
+    .product-detail p {
+        display: none;
+    }
+
+    .product-detail img {
+        height: 70px;
+        object-fit: contain;
+    }
+
+    .payment_container {
+        border-top: 3px solid var(--secondary-color);
+        width: 90vw;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .payment_container .payment {
+        border: none;
+    }
+
+    .user_dashboard_container {
+        gap: 0;
+    }
+
+    .user_dashboard_container .right {
+        width: 85vw;
+        position: relative;
+    }
+
+    .user_dashboard_container .right div {
+        display: flex;
+        align-items: center;
+        padding: .5rem 2rem;
+    }
+
+    .user_menu {
+        width: 15vw;
+    }
+
+    .user_menu .action-icon {
+        margin-bottom: 1rem;
+    }
+
+
+    .user_menu img {
+        height: 60px;
+        object-fit: contain;
+    }
+
+    .user_menu ul a p {
+        display: none;
+    }
+
+    .user_menu {
+        padding: 0 .5rem;
+    }
+
+    .user_menu h2 {
+        display: none;
+    }
+
+    /* ======== RESPONSIVE ADMIN HEADER ====== */
+    #admin_header {
+        padding: 1rem 2rem;
+        height: 60px;
+    }
+
+    .admin_menu {
+        display: none;
+    }
+
+    .admin_mobile_menu {
+        position: absolute;
+        top: 60px;
+        height: 89.5vh;
+        width: 50vw;
+        display: flex;
+        background-color: var(--color-dark);
+        z-index: 999;
+        transition: all .5s ease-in-out;
+    }
+
+    .admin_mobile_menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 2rem;
+    }
+
+    .admin_mobile_menu ul a {
+        color: var(--cultured);
+        font-family: var(--secondary-font);
+        font-size: 1.65rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: all .4s ease-in-out;
+    }
+
+    .admin_mobile_menu ul a:hover {
+        color: var(--main-color);
+    }
+
+
+    .menu-icon {
+        display: block;
+        font-size: 2.5rem;
+        color: var(--eerie-black);
+        cursor: pointer;
+    }
+
+    #admin_dashboard {
+        padding: 1rem 2rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .user_table thead,
+    .admin_products_table thead {
+        display: none;
+    }
+
+    .user_table tbody,
+    .user_table tr,
+    .user_table td,
+    .admin_products_table tbody,
+    .admin_products_table tr,
+    .admin_products_table td {
+        display: block;
+        width: 100%;
+    }
+
+    .user_table tbody tr,
+    .admin_products_table tr {
+        border: none;
+    }
+
+    .user_table tr,
+    .admin_products_table tr {
+        margin-top: 2rem;
+    }
+
+    .user_table td,
+    .admin_products_table td {
+        text-align: start;
+        padding-left: 50%;
+        position: relative;
+        border: 1.5px solid var(--main-color);
+    }
+
+    .user_table td::before,
+    .admin_products_table td::before {
+        content: attr(data-aria-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 1.5rem;
+        font-weight: 500;
+        text-align: left;
+        font-family: var(--secondary-font);
+        font-size: 1.7rem;
+    }
+
+    #admin_products {
+        padding: 2rem;
+    }
+
+    .admin_orders {
+        padding: 2rem;
+    }
+
+    .admin_orders_table{
+        width: 100%;
+        text-align: right;
+    }
+
+     .admin_orders_table thead, 
+     .user_orders_table thead{
+        display: none;
+     }
+
+     .admin_orders_table tbody, .admin_orders_table tbody tr, .admin_orders_table tr td,
+     .user_orders_table tbody, .user_orders_table tbody tr, .user_orders_table tr td{
+        display: block;
+     }
+
+     .admin_orders_table td,
+     .user_orders_table td{        
+        border: 1.5px solid var(--text-grey);
+     }
+
+     .admin_orders_table td::before, 
+     .user_orders_table td::before{
+        content: attr(data-aria-label);
+        position: absolute;
+        left: 1rem;
+        width: 50%;
+        padding-left: 1.5rem;
+        font-weight: 500;
+        text-align: left;
+        font-family: var(--secondary-font);
+        font-size: 1.7rem;
+     }
+
+     .user_orders_table{
+        border: none;
+     }
+
+     .orders_product_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .add-product-container{
+       height: auto;
+     }
+
+     .input_container{
+        flex-direction: column;
+     }
+
+     .add-product-container button{
+        margin-bottom: 2rem;
+        width: 100%;
+        display: block;
+        margin-top: 0rem;
+     }
+
+     .user_dashboard_container .right div{
+        flex-direction: column;
+     }
+
+
+}

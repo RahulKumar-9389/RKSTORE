@@ -11,6 +11,9 @@ A Full Stack E-Commerce Application :)<br/>
     <h1>LOGIN PAGE<h1/><br/>    
 ![Screenshot (9)](https://github.com/RahulKumar-9389/RKSTORE/assets/144117940/bb03e9e4-b104-4ab6-9bd0-02a351be56bf)<br/>
 <h1>USER DASHBOARD<h1/><br/>
-![Screenshot (7)](https://github.com/RahulKumar-9389/RKSTORE/assets/144117940/4478d6cc-016b-4b13-a662-a77f83a6f368)<br/>
 
-   
+
+![Screenshot (7)](https://github.com/RahulKumar-9389/RKSTORE/assets/144117940/09607559-60ec-4dcd-bc94-32d82c91ef6f)<br/>
+
+
+![Screenshot (8)](https://github.com/RahulKumar-9389/RKSTORE/assets/144117940/8aae5fc2-80fa-42f2-9972-dbc2ff78b1e9)<br/>

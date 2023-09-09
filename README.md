@@ -6,4 +6,6 @@ A Full Stack E-Commerce Application :)<br/>
     ![Screenshot (4)](https://github.com/RahulKumar-9389/RKSTORE/assets/144117940/576a6cc4-f056-4d33-84bc-1e2fbf989957)<br/>
     <h1>NEWSLETTER SECTION<h1/><br/>
     ![Screenshot (5)](https://github.com/RahulKumar-9389/RKSTORE/assets/144117940/2ac83ecb-2586-4719-95e9-100439ba50a0)<br/>
+    <h1>CART PAGE<h1/><br/>
+    ![Screenshot (6)](https://github.com/RahulKumar-9389/RKSTORE/assets/144117940/af6daacf-1e43-433d-a2da-597758822eb0)<br/>
    
